@@ -309,7 +309,7 @@
     <Compile Include="XWPF\Usermodel\BreakType.cs" />
     <Compile Include="XWPF\Usermodel\MathContainer.cs" />
     <Compile Include="XWPF\Usermodel\XWPFAcc.cs" />
-    <Compile Include="XWPF\Usermodel\Document.cs" />
+    <Compile Include="XWPF\Usermodel\IDocument.cs" />
     <Compile Include="XWPF\Usermodel\IBody.cs" />
     <Compile Include="XWPF\Usermodel\IBodyElement.cs" />
     <Compile Include="XWPF\Usermodel\ICell.cs" />
