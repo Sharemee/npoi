@@ -61,8 +61,7 @@ namespace NPOI.XWPF.UserModel
             Load(XWPFFactory.GetInstance());
         }
 
-        public XWPFDocument()
-            : base(NewPackage())
+        public XWPFDocument() : base(NewPackage())
         {
             OnDocumentCreate();
         }
