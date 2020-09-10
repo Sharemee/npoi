@@ -31,7 +31,7 @@ namespace NPOI.Util
         {
             // System.err.println("copyNodeRecursively called with "+entry.GetName()+
             // ","+tarGet.getName());
-            DirectoryEntry newTarget = null;
+            DirectoryEntry newTarget;
             if (entry.IsDirectoryEntry)
             {
                 newTarget = target.CreateDirectory(entry.Name);

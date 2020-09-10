@@ -379,7 +379,7 @@ namespace NPOI
          *   you must use {@link #write(OutputStream)} or {@link #write(File)} to 
          *   write to a brand new document.
          * 
-         * @ thrown on errors writing to the file
+         * @ thrown on errors writing to the file</p>
          */
         public abstract void Write() ;
         /**

@@ -30,7 +30,7 @@ namespace NPOI.HSSF.Record
      * 
      * <p>This is for the older-style Excel conditional formattings,
      *  new-style (Excel 2007+) also make use of {@link CFRule12Record}
-     *  and {@link CFExRuleRecord} for their rules.
+     *  and {@link CFExRuleRecord} for their rules.</p>
      */
     public class CFRuleRecord : CFRuleBase, ICloneable
     {

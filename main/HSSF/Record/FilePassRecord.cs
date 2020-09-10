@@ -25,7 +25,7 @@ namespace NPOI.HSSF.Record
     /**
      * Title: File Pass Record (0x002F) <p>
      *
-     * Description: Indicates that the record After this record are encrypted.
+     * Description: Indicates that the record After this record are encrypted.</p>
      */
     public class FilePassRecord : StandardRecord, ICloneable
     {

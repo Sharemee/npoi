@@ -96,6 +96,7 @@ namespace NPOI.SS.UserModel
      *   These locale directives are (currently) ignored.
      *  You can use {@link DateFormatConverter} to do some of this localisation if
      *   you need it. 
+     * </p>
      */
     public class DataFormatter
     {

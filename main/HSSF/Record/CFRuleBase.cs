@@ -33,7 +33,7 @@ namespace NPOI.HSSF.Record
      * 
      * <p>This is for the older-style Excel conditional formattings,
      *  new-style (Excel 2007+) also make use of {@link CFRule12Record}
-     *  and {@link CFExRuleRecord} for their rules.
+     *  and {@link CFExRuleRecord} for their rules.</p>
      */
     public abstract class CFRuleBase : StandardRecord, ICloneable
     {
@@ -90,37 +90,37 @@ namespace NPOI.HSSF.Record
         public static int TEMPLATE_ABOVE_OR_EQUAL_TO_AVERAGE = 0x001D;
         public static int TEMPLATE_BELOW_OR_EQUAL_TO_AVERAGE = 0x001E;
 
-        internal static BitField modificationBits = bf(0x003FFFFF); // Bits: font,align,bord,patt,prot
-        internal static BitField alignHor = bf(0x00000001); // 0 = Horizontal alignment modified
-        internal static BitField alignVer = bf(0x00000002); // 0 = Vertical alignment modified
-        internal static BitField alignWrap = bf(0x00000004); // 0 = Text wrapped flag modified
-        internal static BitField alignRot = bf(0x00000008); // 0 = Text rotation modified
-        internal static BitField alignJustLast = bf(0x00000010); // 0 = Justify last line flag modified
-        internal static BitField alignIndent = bf(0x00000020); // 0 = Indentation modified
-        internal static BitField alignShrin = bf(0x00000040); // 0 = Shrink to fit flag modified
-        internal static BitField mergeCell = bf(0x00000080); // Normally 1, 0 = Merge Cell flag modified
-        internal static BitField protLocked = bf(0x00000100); // 0 = Cell locked flag modified
-        internal static BitField protHidden = bf(0x00000200); // 0 = Cell hidden flag modified
-        internal static BitField bordLeft = bf(0x00000400); // 0 = Left border style and colour modified
-        internal static BitField bordRight = bf(0x00000800); // 0 = Right border style and colour modified
-        internal static BitField bordTop = bf(0x00001000); // 0 = Top border style and colour modified
-        internal static BitField bordBot = bf(0x00002000); // 0 = Bottom border style and colour modified
-        internal static BitField bordTlBr = bf(0x00004000); // 0 = Top-left to bottom-right border flag modified
-        internal static BitField bordBlTr = bf(0x00008000); // 0 = Bottom-left to top-right border flag modified
-        internal static BitField pattStyle = bf(0x00010000); // 0 = Pattern style modified
-        internal static BitField pattCol = bf(0x00020000); // 0 = Pattern colour modified
-        internal static BitField pattBgCol = bf(0x00040000); // 0 = Pattern background colour modified
-        internal static BitField notUsed2 = bf(0x00380000); // Always 111 (ifmt / ifnt / 1)
-        internal static BitField undocumented = bf(0x03C00000); // Undocumented bits
-        internal static BitField fmtBlockBits = bf(0x7C000000); // Bits: font,align,bord,patt,prot
-        internal static BitField font = bf(0x04000000); // 1 = Record Contains font formatting block
-        internal static BitField align = bf(0x08000000); // 1 = Record Contains alignment formatting block
-        internal static BitField bord = bf(0x10000000); // 1 = Record Contains border formatting block
-        internal static BitField patt = bf(0x20000000); // 1 = Record Contains pattern formatting block
-        internal static BitField prot = bf(0x40000000); // 1 = Record Contains protection formatting block
-        internal static BitField alignTextDir = bf(0x80000000); // 0 = Text direction modified
+        internal static BitField modificationBits = Bf(0x003FFFFF); // Bits: font,align,bord,patt,prot
+        internal static BitField alignHor = Bf(0x00000001); // 0 = Horizontal alignment modified
+        internal static BitField alignVer = Bf(0x00000002); // 0 = Vertical alignment modified
+        internal static BitField alignWrap = Bf(0x00000004); // 0 = Text wrapped flag modified
+        internal static BitField alignRot = Bf(0x00000008); // 0 = Text rotation modified
+        internal static BitField alignJustLast = Bf(0x00000010); // 0 = Justify last line flag modified
+        internal static BitField alignIndent = Bf(0x00000020); // 0 = Indentation modified
+        internal static BitField alignShrin = Bf(0x00000040); // 0 = Shrink to fit flag modified
+        internal static BitField mergeCell = Bf(0x00000080); // Normally 1, 0 = Merge Cell flag modified
+        internal static BitField protLocked = Bf(0x00000100); // 0 = Cell locked flag modified
+        internal static BitField protHidden = Bf(0x00000200); // 0 = Cell hidden flag modified
+        internal static BitField bordLeft = Bf(0x00000400); // 0 = Left border style and colour modified
+        internal static BitField bordRight = Bf(0x00000800); // 0 = Right border style and colour modified
+        internal static BitField bordTop = Bf(0x00001000); // 0 = Top border style and colour modified
+        internal static BitField bordBot = Bf(0x00002000); // 0 = Bottom border style and colour modified
+        internal static BitField bordTlBr = Bf(0x00004000); // 0 = Top-left to bottom-right border flag modified
+        internal static BitField bordBlTr = Bf(0x00008000); // 0 = Bottom-left to top-right border flag modified
+        internal static BitField pattStyle = Bf(0x00010000); // 0 = Pattern style modified
+        internal static BitField pattCol = Bf(0x00020000); // 0 = Pattern colour modified
+        internal static BitField pattBgCol = Bf(0x00040000); // 0 = Pattern background colour modified
+        internal static BitField notUsed2 = Bf(0x00380000); // Always 111 (ifmt / ifnt / 1)
+        internal static BitField undocumented = Bf(0x03C00000); // Undocumented bits
+        internal static BitField fmtBlockBits = Bf(0x7C000000); // Bits: font,align,bord,patt,prot
+        internal static BitField font = Bf(0x04000000); // 1 = Record Contains font formatting block
+        internal static BitField align = Bf(0x08000000); // 1 = Record Contains alignment formatting block
+        internal static BitField bord = Bf(0x10000000); // 1 = Record Contains border formatting block
+        internal static BitField patt = Bf(0x20000000); // 1 = Record Contains pattern formatting block
+        internal static BitField prot = Bf(0x40000000); // 1 = Record Contains protection formatting block
+        internal static BitField alignTextDir = Bf(0x80000000); // 0 = Text direction modified
 
-        private static BitField bf(long i) {
+        private static BitField Bf(long i) {
             return BitFieldFactory.GetInstance((int)i);
         }
 
@@ -523,7 +523,7 @@ namespace NPOI.HSSF.Record
          * TODO - parse conditional format formulas properly i.e. produce tRefN and tAreaN instead of tRef and tArea
          * this call will produce the wrong results if the formula Contains any cell references
          * One approach might be to apply the inverse of SharedFormulaRecord.ConvertSharedFormulas(Stack, int, int)
-         * Note - two extra parameters (rowIx & colIx) will be required. They probably come from one of the Region objects.
+         * Note - two extra parameters (rowIx colIx) will be required. They probably come from one of the Region objects.
          *
          * @return <code>null</code> if <tt>formula</tt> was null.
          */

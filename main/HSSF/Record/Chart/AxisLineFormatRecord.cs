@@ -50,7 +50,7 @@ namespace NPOI.HSSF.Record.Chart
      *       Remove the record in src/records/definitions.
 
      * @author Glen Stampoultzis (glens at apache.org)
-     *///
+     */
     
     /// <summary>
     /// The AxisLine record specifies which part of the axis (section 2.2.3.6) is 
@@ -119,9 +119,10 @@ namespace NPOI.HSSF.Record.Chart
 
         public override Object Clone()
         {
-            AxisLineFormatRecord rec = new AxisLineFormatRecord();
-
-            rec.field_1_axisType = field_1_axisType;
+            AxisLineFormatRecord rec = new AxisLineFormatRecord
+            {
+                field_1_axisType = field_1_axisType
+            };
             return rec;
         }
 
@@ -136,11 +137,7 @@ namespace NPOI.HSSF.Record.Chart
          *        AXIS_TYPE_MAJOR_GRID_LINE
          *        AXIS_TYPE_MINOR_GRID_LINE
          *        AXIS_TYPE_WALLS_OR_FLOOR
-         *///
-        
-        /// <summary>
-        /// 
-        /// </summary>
+         */
         public short AxisType
         {
             get { return field_1_axisType; }

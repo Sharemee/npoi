@@ -28,7 +28,7 @@ namespace NPOI.HSSF.Record.Common
      * The HSSF file format normally stores Color information in the
      *  Palette (see PaletteRecord), but for a few cases (eg Conditional
      *  Formatting, Sheet Extensions), this XSSF-style color record 
-     *  can be used.
+     *  can be used.</P>
      */
     public class ExtendedColor: ICloneable {
         public static int TYPE_AUTO = 0;

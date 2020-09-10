@@ -152,7 +152,7 @@ namespace NPOI.SS.UserModel
          *  then
          *  {@link ColorScaleFormatting#getThresholds()}
          *  and
-         *  {@link ColorScaleFormatting#getColors()}
+         *  {@link ColorScaleFormatting#getColors()}</p>
          */
         IConditionalFormattingRule CreateConditionalFormattingColorScaleRule();
 
